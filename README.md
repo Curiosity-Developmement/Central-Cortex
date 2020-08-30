@@ -1,9 +1,9 @@
 # Centeral-Cortex
-Repo for our cool custon bot
+Repo for our cool custom bot
 ## Struggling to cope with school homework? Getting distracted with memes? Need find a place of like-minded people?
 **Join Curiosity!**\
 [![Discord](https://img.shields.io/discord/707698452066205867?label=JOIN%20CURIOSITY&style=for-the-badge)](https://discord.gg/mKJtFfY)\
-[![](images/selfie1.png)](https://discord.gg/mKJtFfY)
+[![](./images/selfie1.png)](https://discord.gg/mKJtFfY)
 - Categories for a multitude of subjects, from Civil Engineering to French Vocabulary
 - Active Staff members
 - Capable helper team
@@ -17,7 +17,7 @@ Repo for our cool custon bot
 \
 Join us to discuss, relax, relieve stress and study!\
 [![Discord](https://img.shields.io/discord/707698452066205867?label=JOIN%20CURIOSITY&style=for-the-badge)](https://discord.gg/mKJtFfY)\
-[![](images/selfie.png)](https://discord.gg/mKJtFfY)
+[![](./images/selfie.png)](https://discord.gg/mKJtFfY)
 ##### What is this repository
 This is a repository for our bot in our discord server.
 ##### Format

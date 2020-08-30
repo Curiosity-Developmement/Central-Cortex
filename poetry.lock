@@ -146,6 +146,14 @@ version = "4.7.6"
 
 [[package]]
 category = "main"
+description = "Strict separation of settings from code."
+name = "python-decouple"
+optional = false
+python-versions = "*"
+version = "3.3"
+
+[[package]]
+category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -185,7 +193,7 @@ python-versions = "*"
 version = "2020.7.28"
 
 [metadata]
-content-hash = "9eac22f0b91f957402e67f09729f466b046364899c60582bf8b2c7c78575943f"
+content-hash = "87c340baf9823bcc109b4fbfe1c080fc9f5cfd7ce1ab39c16ef7e1fd8732b50e"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -296,6 +304,9 @@ multidict = [
     {file = "multidict-4.7.6-cp38-cp38-win32.whl", hash = "sha256:5cf311a0f5ef80fe73e4f4c0f0998ec08f954a6ec72b746f3c179e37de1d210d"},
     {file = "multidict-4.7.6-cp38-cp38-win_amd64.whl", hash = "sha256:7388d2ef3c55a8ba80da62ecfafa06a1c097c18032a501ffd4cabbc52d7f2b19"},
     {file = "multidict-4.7.6.tar.gz", hash = "sha256:fbb77a75e529021e7c4a8d4e823d88ef4d23674a202be4f5addffc72cbb91430"},
+]
+python-decouple = [
+    {file = "python-decouple-3.3.tar.gz", hash = "sha256:55c546b85b0c47a15a47a4312d451a437f7344a9be3e001660bccd93b637de95"},
 ]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},

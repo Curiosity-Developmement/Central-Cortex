@@ -6,12 +6,21 @@ class Help(commands.Cog):
     self.client=client
 
   @commands.command()
-  async def help(self,ctx):
-    embed = discord.Embed(title = '**Help**', description = """
-`[math` - Math commands can be found here
-`[french` - French commands can be found here"""
-    , color = 0x00ff000)
-    await ctx.send(embed = embed)
+  async def help(self,ctx,help='',*,q=''):
+    help=help.lower()
+
+    if help=='python':
+      await ctx.invoke(self.client.get_command('python'),q=q)
+    else:
+      embed = discord.Embed(title = '**Help**', description = """
+  **Prefix** : ``[``
+  `[math` - Math commands can be found here
+  `[french` - French commands can be found here
+  `[debate` - Debate commands can be found here
+  `[python` - Python help
+  `[java` - java help"""
+      , color = 0x00ff000)
+      await ctx.send(embed = embed)
 
 
 

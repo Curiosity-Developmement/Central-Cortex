@@ -23,3 +23,6 @@ This is a repository for our bot in our discord server.
 Every category gets its own .py file in the folder "commands"
 ##### Template code
 template.py
+
+# Can I fork the code?
+Absolutely! This is open source code availible to anyone to use. The only thing we ask of you is to link back to the original in the "[help" command! Thanks, and have a great day!

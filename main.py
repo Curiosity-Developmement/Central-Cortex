@@ -47,7 +47,7 @@ async def on_member_join(member):
 @client.event
 async def on_member_remove(member):
     channel1 = client.get_channel(708292001715716187)
-    await channel1.send(f"We have lost {member.mention}...What a pity.")
+    await channel1.send(f"We have lost {member.name} ...What a pity.")
 
 
 @client.event

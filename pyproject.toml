@@ -12,6 +12,7 @@ discord = "^1.0.1"
 pytz = "^2020.1"
 youtube-dl = "^2020.7.28"
 python-decouple = "^3.3"
+googletrans = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
 

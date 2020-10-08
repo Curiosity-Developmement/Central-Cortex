@@ -9,6 +9,7 @@ class Help(commands.Cog):
   async def help(self,ctx,help='',*,q=''):
     help=help.lower()
 
+    # if user asks for python help, call the python help command with q as argument
     if help=='python':
       await ctx.invoke(self.client.get_command('python'),q=q)
     else:

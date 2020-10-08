@@ -1,0 +1,19 @@
+
+		#if message.author.bot != True:
+		#for x in helpers.members:
+				#if (x not in message.mentions) and not(message.author in helpers.members):
+					#try:
+						#await message.author.send("Hello! Please refrain from pinging unless absolutely necessary.")
+					#except discord.errors.Forbidden:
+						#channel = client.get_channel(719967950299463760)
+						#await channel.send(f"{message.author.mention}! Please enable DM's from this server ")
+					#except:
+						#Dev = client.get_user(343141464362057728)
+						#await Dev.send("Error in the mentions... lol")
+
+
+
+
+						#helpers = message.guild.get_role(710191407578480731)
+		#mods = message.guild.get_role(707699531118018660)
+		#admins = message.guild.get_role(707700908204621924)

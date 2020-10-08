@@ -20,20 +20,20 @@ client.remove_command('help')
 
 
 def load_cogs():
-  for file in os.listdir('./commands'):
+    for file in os.listdir('./categories'):
         if file.endswith('.py'):
-            client.load_extension(f'commands.{file[:-3]}')
+            client.load_extension(f'categories.{file[:-3]}')
 
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name='Undergoing Development'))
+    #await client.change_presence(activity=discord.Game(name='Undergoing Development'))
     await client.wait_until_ready()
     load_cogs()
-    # await client.change_presence(
-    #     activity=discord.Activity(
-    #         type=discord.ActivityType.listening, name="your questions."))
-    print("Brain Cell 1 operational, not sure about number 2 tho")
+    await client.change_presence(
+        activity=discord.Activity(
+            type=discord.ActivityType.listening, name="your questions."))
+    print("All modules loaded!")
 
 
 @client.event
@@ -47,10 +47,19 @@ async def on_member_join(member):
 @client.event
 async def on_member_remove(member):
     channel1 = client.get_channel(708292001715716187)
-    await channel1.send(f"""We have lost {member.mention}...""")
-    time.sleep(0.5)
-    await channel1.send("*Server Curiosity has dropped by 1*")
+    await channel1.send(f"We have lost {member.mention}...What a pity.")
 
+
+@client.event
+async def on_message(message):
+    if (message.channel.id == 712726793785704610 or message.channel.id == 713088442824654940):
+      await message.add_reaction('\N{THUMBS UP SIGN}')
+      await message.add_reaction('\N{THUMBS DOWN SIGN}')
+    await client.process_commands(message)
+     
+@client.command(pass_context=True)
+async def giverole(ctx, user: discord.Member, role: discord.Role):
+    await user.add_roles(role)
 
 keep_alive()
 TOKEN = config("BOT_TOKEN")
